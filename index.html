@@ -28,11 +28,13 @@
     <section id="chapter2">
       <h2>Chapter2: CSS</h2>
       <section>
+
         <h3>Sizing</h3>
         <ul>
           <li>use % to size boxes</li>
           <li>use em to size texts, you can change font size of the entire website by just changing a single base font size</li>
         </ul>
+
         <h3>Box model</h3>
         <ul>
           <li>inline elements can only have margins and padding applied to the left and right, but not top and bottom</li>
@@ -48,7 +50,18 @@
           </ol>
           </li>
           <li>It is common practice to use <code>ul</code> to contain sets of links for things like navigation, menus, etc</li>
+          <li>Margin is out of control of <code>box-sizing: border-box</code>. So if you want to display 4 boxes in a row by setting <code>width: 25%</code> and some margin, you'll end up with 2 lines.</li>
         </ul>
+
+        <h3>Selectors</h3>
+        <table>
+          <tr>
+            <tr><th>selector</th><th>explanation</th><th>example</th><th>comment</th></tr>
+            <tr><td>.</td><td>class</td><td><code>.nav-container</code></td></tr>
+            <tr><td>#</td><td>id</td><td><code>#book-content</code></td></tr>
+            <tr><td>&gt;</td><td>(direct) child</td><td><code>.social-list \> li</code></td><td>to select the descendent, just do <code>.social-list li</code></td></tr>
+          </tr>
+        </table>
       </section>
     </section>
   
