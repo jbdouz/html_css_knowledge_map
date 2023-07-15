@@ -1,0 +1,23 @@
+/* OVERALL  */
+body {
+  font-size: 18px;
+}
+
+/* NAVIGATION */
+.nav-chapter {
+  display: inline;
+}
+
+.point-illustrator {
+  width: 30%;
+}
+
+/* BULLET POINTS */
+li {
+  margin: 2px;
+}
+
+/* CODE SNIPPETS */
+code {
+  background: lightcyan;
+}

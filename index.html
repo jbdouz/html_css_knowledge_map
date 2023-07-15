@@ -15,8 +15,10 @@
 
     <header>
       <h1>Learn enough HTML and CSS to be dangerous knowledge map</h1>
-      <p>Chapter1</p>
-      <p>Chapter2</p>
+      <ul>
+        <li class="nav-chapter"><a href="#chapter1">Chapter 1</a></li>
+        <li class="nav-chapter"><a href="#chapter2">Chapter 2</a></li>
+      </ul>
     </header>
     
     <section id="chapter1">
@@ -29,6 +31,23 @@
         <h3>Sizing</h3>
         <ul>
           <li>use % to size boxes</li>
+          <li>use em to size texts, you can change font size of the entire website by just changing a single base font size</li>
+        </ul>
+        <h3>Box model</h3>
+        <ul>
+          <li>inline elements can only have margins and padding applied to the left and right, but not top and bottom</li>
+          <li>you can change how an element is displayed by setting display: {inline, block, none, ...}</li>
+          <li>trick: you can set left,right margin to auto to make a box appear in the middle</li>
+          <li>
+          some methods to end the float
+          <ol>
+            <li>in the element beneath the floating ones, add attribute clear: {left, right, both}</li>
+            <li>in the wrapper of the floating elements, add overflow:hidden. (Bad for dropdown menus)</li>
+            <img src="images/overflow_hidden_dropdown.jpg" alt="illustration of problem caused by overflow:hidden to dropdown menus" class="point-illustrator">
+            <li>(the rather complicated) ::after method</li>
+          </ol>
+          </li>
+          <li>It is common practice to use <code>ul</code> to contain sets of links for things like navigation, menus, etc</li>
         </ul>
       </section>
     </section>
