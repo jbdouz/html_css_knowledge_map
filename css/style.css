@@ -22,3 +22,8 @@ code {
   background: peachpuff;
   font-size: 0.8em;
 }
+
+.code-block {
+  background: peachpuff;
+  display: inline-block;
+}

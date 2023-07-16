@@ -53,6 +53,31 @@
           <li>Margin is out of control of <code>box-sizing: border-box</code>. So if you want to display 4 boxes in a row by setting <code>width: 25%</code> and some margin, you'll end up with 2 lines.</li>
         </ul>
 
+        <h3>Jekyll</h3>
+        <ul>
+          <li>
+            layout: in <code>_layouts/</code> directory <br>
+            Usage: 
+            <code>
+              <div class="code-block">
+                ---<br>
+                layout: &lt;some_layout(without suffix.html)&gt;<br>
+                ---
+              </div>
+            </code>
+          </li>
+          <li>
+            include: in <code>_includes/</code>smallest/most reusable snippets of site code, usually loaded into layouts or templates <br>
+              Usage: 
+              <code>
+                <div class="code-block">
+                  {% include <snippet.html> %}
+                </div>
+              </code>
+          </li>
+          <p></p>
+        </ul>
+
         <h3>Selectors</h3>
         <table>
           <tr>
@@ -60,7 +85,7 @@
             <tr><td>.</td><td>class</td><td><code>.nav-container</code></td></tr>
             <tr><td>#</td><td>id</td><td><code>#book-content</code></td></tr>
             <tr><td>&gt;</td><td>(direct) child</td><td><code>.social-list \> li</code></td><td>to select the descendent, just do <code>.social-list li</code></td></tr>
-          </tr>
+            <tr><td>:</td><td>pseudo-class</td><td><code>nav-link:hover</code></td></tr>
         </table>
       </section>
     </section>
