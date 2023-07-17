@@ -85,8 +85,18 @@
             <tr><td>.</td><td>class</td><td><code>.nav-container</code></td></tr>
             <tr><td>#</td><td>id</td><td><code>#book-content</code></td></tr>
             <tr><td>&gt;</td><td>(direct) child</td><td><code>.social-list \> li</code></td><td>to select the descendent, just do <code>.social-list li</code></td></tr>
+            <tr><td>+</td><td>sibling</td><td><code>h2 + p</code></td><td>selects a p tag only if it is immediately preceded by an h2 tag</td></tr>
+            <tr><td>~</td><td>general sibling</td><td><code>h2 ~ p</code></td><td>selects all p tags preceded by an h2 tag</td></tr>
             <tr><td>:</td><td>pseudo-class</td><td><code>nav-link:hover</code></td></tr>
         </table>
+
+        <h3>Positioning</h3>
+        <ul>
+          <li>static: default positiong</li>
+          <li>absolute: ignores content flow</li>
+          <li>relative: respects content flow, makes the element a separate canvas, everything inside it that is absolutely positioned takes its place based on the dimensions of the parent</li>
+          <li>fixed: </li>
+        </ul>
       </section>
     </section>
   
