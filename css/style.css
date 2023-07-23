@@ -16,6 +16,9 @@ body {
 li {
   margin: 2px;
 }
+.enumerator-item {
+  margin: 0;
+}
 
 /* CODE SNIPPETS */
 code {

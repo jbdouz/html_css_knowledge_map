@@ -53,9 +53,39 @@
           <li>Margin is out of control of <code>box-sizing: border-box</code>. So if you want to display 4 boxes in a row by setting <code>width: 25%</code> and some margin, you'll end up with 2 lines.</li>
         </ul>
 
+        <h3>Flexbox</h3>
+        <ul>
+          <li>flex container (<code>display: flex;</code>) & flex item (<code>flex: {some_property}</code>)</li>
+          <li>main axis (horizontal) vs. cross axis (vertical), fliped if <code>flex-direction: column</code></li>
+          <li>elements are placed along the main axis</li>
+          <li>
+            <details>
+              <summary>flex item properties</summary>
+              <ul>
+                <li>flex-grow</li>
+                <li>flex-direction</li>
+                <li>justify-content: {flex-start, flex-end, center, space-between, space-around, space-evenly}; determines how item is placed along the main axis</li>
+                <li>align-items: {flex-start, flex-end, center, baseline}; determines how item is placed along the cross-axis</li>
+                <li>flex-wrap</li>
+                <li>align-content</li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+
         <h3>Jekyll</h3>
         <ul>
-          <li>to start a Jekyll framework: <code>exec jekyll serve</code></li>
+          <li>
+            Jekyll workflow: (will be written into a convenience function jekyll_init())
+            <ol>
+              <li><code>bundler exec jekyll serve {--port xxxx}</code></li>
+              <li><code>echo _site/ &gt;&gt;.ignore</code></li>
+              <li><code>echo .bundle &gt;&gt;.ignore</code></li>
+              <li><code>mkdir _layouts</code></li>
+              <li><code>mkdir _includes</code></li>
+              <li><code>gitacp "initialisation"</code></li>
+            </ol>
+          </li>
           <li>
             layout: in <code>_layouts/</code> directory <br>
             Usage: 
@@ -88,15 +118,29 @@
             <tr><td>&gt;</td><td>(direct) child</td><td><code>.social-list \> li</code></td><td>to select the descendent, just do <code>.social-list li</code></td></tr>
             <tr><td>+</td><td>sibling</td><td><code>h2 + p</code></td><td>selects a p tag only if it is immediately preceded by an h2 tag</td></tr>
             <tr><td>~</td><td>general sibling</td><td><code>h2 ~ p</code></td><td>selects all p tags preceded by an h2 tag</td></tr>
-            <tr><td>:</td><td>pseudo-class</td><td><code>nav-link:hover</code></td></tr>
+            <tr>
+              <td>:</td>
+              <td>pseudo-class</td>
+              <td>
+                <details class="item-enumerator">
+                  <summary>examples</summary>
+                  <p class="enumerator-item"><code>:hover</code></p>
+                  <p class="enumerator-item"><code>:active</code></p>
+                  <p class="enumerator-item"><code>:before</code></p>
+                  <p class="enumerator-item"><code>:after</code></p>
+                  <img src="images/pseudo_before_after.jpeg" alt="illustration of before and after pseudo class">
+                </details>
+              </td>
+            </tr>
         </table>
 
         <h3>Positioning</h3>
         <ul>
-          <li>static: default positiong</li>
-          <li>absolute: ignores content flow</li>
+          <li>static: default positiong, does not have access to top, right, bottom, left property</li>
+          <li>absolute: ignores content flow, if its parent does not have position set, the values set (such as top, left, etc) will be against the whole page. If the parent does have position property set (say, relative), the values set will be against its parent.</li>
           <li>relative: respects content flow, makes the element a separate canvas, everything inside it that is absolutely positioned takes its place based on the dimensions of the parent</li>
-          <li>fixed: </li>
+          <li>fixed: does not move when scrolling, biggest difference with absolute; always positioned relative to the html element</li>
+          <li>sticky: will scroll with other elements until it hits the set position</li>
         </ul>
       </section>
     </section>
