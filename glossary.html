@@ -9,44 +9,123 @@
   <body>
     <h1>Glossary</h1>
 
-    <section>
-      <h2>Programming</h2>
-      <table>
-        <tr><th>Term</th><th>Definition</th></tr>
-        <tr><td>refactoring</td><td>changing the form of code without changing its function</td></tr>
-      </table>
-    </section>
-    
-    <section>
-      <h2>HTML</h2>
-      <table>
-        <tr><th>Term</th><th>Definition</th></tr>
-        <tr><td>block element</td><td>interrupting the flow of content by creating a box</td></tr>
-        <tr><td>hot linking</td><td>image linked from an online source</td></tr>
-        <tr><td>inline elements</td><td>flow with the text around it</td></tr>
-      </table>
-    </section>
+    <details>
+      <summary><h1>frontend</h1></summary>
+      <section>
+        <h2>Programming</h2>
+        <table>
+          <tr><th>Term</th><th>Definition</th></tr>
+          <tr><td>refactoring</td><td>changing the form of code without changing its function</td></tr>
+        </table>
+      </section>
+      
+      <section>
+        <h2>HTML</h2>
+        <table>
+          <tr><th>Term</th><th>Definition</th></tr>
+          <tr><td>block element</td><td>interrupting the flow of content by creating a box</td></tr>
+          <tr><td>hot linking</td><td>image linked from an online source</td></tr>
+          <tr><td>inline elements</td><td>flow with the text around it</td></tr>
+        </table>
+      </section>
 
-    <section>
-      <h2>CSS</h2>
-      <table>
-        <tr><th>Term</th><th>Definition</th></tr>
-        <tr><td>em</td><td>a relative size unit, approximate width of the letter m</td></tr>
-        <tr><td>media query</td><td>set different styles for elements based on the size of the user's browser window</td></tr>
-        <tr><td>rem</td><td>size unit only relative to the root size, but not to parents</td></tr>
-        <tr><td>vh</td><td>viewport height, 1vh = 1% viewport height</td></tr>
-        <tr><td>vw</td><td>viewport width</td></tr>
-        <tr><td>z-index</td><td>depth dimension, how far the element goes into the screen or out toward the viewer, concerns layering</td></tr>
-      </table>
-    </section>
+      <section>
+        <h2>CSS</h2>
+        <table>
+          <tr><th>Term</th><th>Definition</th></tr>
+          <tr><td>em</td><td>a relative size unit, approximate width of the letter m</td></tr>
+          <tr><td>media query</td><td>set different styles for elements based on the size of the user's browser window</td></tr>
+          <tr><td>rem</td><td>size unit only relative to the root size, but not to parents</td></tr>
+          <tr><td>vh</td><td>viewport height, 1vh = 1% viewport height</td></tr>
+          <tr><td>vw</td><td>viewport width</td></tr>
+          <tr><td>z-index</td><td>depth dimension, how far the element goes into the screen or out toward the viewer, concerns layering</td></tr>
+        </table>
+      </section>
 
-    <section>
-      <h2>Jekyll</h2>
-      <table>
-        <tr><th>Term</th><th>Definition</th></tr>
-        <tr><td>frontmatter</td><td>specification of layout, etc that is included within "---"</td></tr>
-      </table>
-    </section>
+      <section>
+        <h2>Jekyll</h2>
+        <table>
+          <tr><th>Term</th><th>Definition</th></tr>
+          <tr><td>frontmatter</td><td>specification of layout, etc that is included within "---"</td></tr>
+        </table>
+      </section>
+    </details>
 
+    <details>
+      <summary><h1>Algorithm</h1></summary>
+      <table>
+        <thead>
+          <tr><th>Term</th><th>Definition</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Euclid's algorithm</td><td>gcd(m, n) = gcd(n, m mod n)</td></tr>
+          <tr><td>Sieve of Eratosthenes</td><td>an algorithm to generate consecutive primes not exceeding any given integer n &gt; 1. Sequentially eliminate multiples of smallest number in the list (2, 3, 5, ...). Notice 4 is already eliminated by 2</td></tr>
+          <tr><td>sequential vs. parallel algorithm</td></tr>
+          <tr><td>TSP (traveling salesman problem)</td><td>the problem of finding the shortest tour through n cities that visits every city exactly one</td></tr>
+          <tr><td>graph coloring problem</td><td>assign smallest number of colors to the vertices of a graph so that no two adjacent vertices are the same color</td></tr>
+          <tr><td>closest-pair problem</td><td>given n points in the plane, find the closest pair among them</td></tr>
+          <tr><td>Convex-hull problem</td><td>find the smallest convex polygon that would include all the points of a given set</td></tr>
+        </tbody>
+      </table>
+    </details>
+
+    <details>
+      <summary><h1>AI planning</h1></summary>
+      <table>
+        <thead>
+          <tr><th>Term</th><th>Definition</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>sypplogism</td><td>an informal system created by Aristotle that allowed one to generate conclusions mechanically, given initial premises</td></tr>
+          <tr><td>dualism</td><td>there is a part of the human mind that is outside of nature, exempt from physical laws</td></tr>
+          <tr><td>materialism</td><td>the brain's operation according to the laws of physics constitutes the mind</td></tr>
+          <tr><td>principle of induction</td><td>the general rules are acquired by exposure to repeated associations between their elements</td></tr>
+          <tr><td>regression planning system</td><td>from end to mean</td></tr>
+          <tr><td>tractability</td><td>a problem is called intractable if the time required to solve instances of the problem grows exponentially with the size of the instances</td></tr>
+          <tr><td>The knight's tour</td><td>a sequence of knight's moves that causes the piece to visit every square of a chess board without stepping on any square twice</td></tr>
+          <tr><td>VRP</td><td>Vehicle Routing Problem</td></tr>
+          <tr><td>classical planning problems</td><td>discrete, finite, deterministic; facts are boolean, actions available are correct and deterministic (effects are not random), planner has complete knowledge of the initial state.</td></tr>
+          <tr><td>domain</td><td>defines the state variables (facts) and actions</td></tr>
+          <tr><td>effects</td><td>an action's impact on the state of the world</td></tr>
+          <tr><td>fact</td><td>describing the state of the world we model</td></tr>
+          <tr><td>model</td><td>problem formalisation</td></tr>
+          <tr><td>planner</td><td>an AI planning system</td></tr>
+          <tr><td>problem</td><td>initial state and the goal condition</td></tr>
+          <tr><td>procondition</td><td>determines in which state the action can be performed</td></tr>
+          <tr><td>state transformation problems</td><td>initial state, desired goal, a set of possible actions that can be taken to change the state</td></tr>
+        </tbody>
+      </table>
+    </details>
+
+    <details>
+      <summary><h1>statistics</h1></summary>
+      <section>
+        <h2>Pattern Recognition and machine learning</h2>
+        <table>
+          <thead>
+            <tr><th>Term</th><th>Definition</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>generalization</td><td>the ability to categorize corretly new examples that differ from training data</td></tr>
+            <tr><td>feature extraction</td><td>preprocess original input variables to tranform them into some new space variable where pattern recognition problem will be easier to solve</td></tr>
+            <tr><td>supervised learning</td><td>training data comprises input vectors and correspoding target vectors</td></tr>
+            <tr><td>reinforcement learning</td><td>finding suitable actions to take in a given situation in order to maximize the reward</td></tr>
+            <tr><td>credit assignment problem</td><td>a reinforcement learning game where the reward is only determined at the end, and the final reward must be attributed the all the moves that lead to it</td></tr>
+            <tr><td>exploration</td><td>one feature of reinforcement learning where the system tries new actions</td></tr>
+            <tr><td>exploitation</td><td>feature of reinforcement learning where the system makes use of actions that are known to yield a high reward</td></tr>
+            <tr><td>linear models</td><td>functions that are linear in the unknown parameters</td></tr>
+            <tr><td>regularization</td><td>a technique to control the over-fitting problem. involves adding a penalty term the the error function. The simplest penalty is sum of squares of all of the coefficients</td></tr>
+            <tr><td>shrinkage</td><td>techniques to minimize error function that are penalised with the size of coefficients. called shrinkage because the goal is to reduce the value of coefficients</td></tr>
+            <tr><td>ridge regression</td><td>particular case of a quadratic regularizer</td></tr>
+            <tr><td>weight decay</td><td>ridge regression in the context of neural network</td></tr>
+            <tr><td>classical/frequentist interpretation of probability</td><td>probability as frequencies of random, repeatable events</td></tr>
+            <tr><td>bayesian interpretation of probability</td><td>probability provide a quantification of uncertainty</td></tr>
+            <tr><td>likelihood function</td><td>given a set of parameters of the mode, how likely is the observation</td></tr>
+            <tr><td>error function</td><td>negative log of the likelihood function in ML</td></tr>
+            <tr><td>bootstrap</td><td>sampling with replacement to create new dataset</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </details>
   </body>
 </html>

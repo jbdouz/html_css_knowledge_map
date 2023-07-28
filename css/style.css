@@ -20,6 +20,14 @@ li {
   margin: 0;
 }
 
+td:first-child {
+  font-weight: bold;
+}
+
+table, td {
+  border: 1px solid #eee;
+}
+
 /* CODE SNIPPETS */
 code {
   background: peachpuff;
