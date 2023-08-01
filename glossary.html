@@ -126,6 +126,28 @@
           </tbody>
         </table>
       </section>
+
+      <section>
+        <h2>Computational statistics and data science</h2>
+        <table>
+          <thead>
+            <tr><th>Term</th><th>Definition</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>shrinkage/regularization</td><td>fit a model containing all p predictors and shrink/regularize some of the coefficients to 0, this significantly reduces the variance of the coefficients</td></tr>
+            <tr><td>least square fitting</td><td>fit linear model that minimizes RSS (residual sum of squares)</td></tr>
+            <tr><td>Ridge regression</td><td>minimizes RSS + shrinkage penalty, which equals lambda * sum of coefficients squared, lambda is called tuning parameter, intercpet beta_0 is not shrinked, better to apply it after standardizing the predictors because ridge regression is not scale equivariant, standardization is done by dividing a data point of a predictor by its standard deviation.<br>diadvantage: will include all the predictors, bad for model interpretation</td></tr>
+            <tr><td>lasso regression</td><td>addresses the disadvantage of ridge where it keeps all the predictors <br>the penalty is lambda * sum of absolute value of coefficients, in stat parlance, it's called l1 penalty (contrast to l2 penalty that Ridge uses)</td></tr>
+            <tr><td>budget s (on ridge and lasso)</td><td>another formulation of penalty, sum of absolute value of coefficients (lasso) or squared coefficients (ridge) must be constrained by a budget s</td></tr>
+            <tr><td>Principle Component Regression</td><td>Assumption: directions in which X1, ... , Xp show the most variation are the directions that are associated with Y (response), which makes it a sort of unsupervised<br>standardizing is recommended as the high-variance variables will tend to player a larger role, and the scale of variable matters</td></tr>
+            <tr><td>Partial Least Squares (PLS)</td><td>supervised alternative to PCR</td></tr>
+            <tr><td>bias-variance trade off</td><td>MSE = bias**2 + variance</td></tr>
+            <tr><td>RSS</td><td>Residual sum of squares: sum of (y - y_hat) squared</td></tr>
+            <tr><td>TSS</td><td>Total sum of squares: sum of (y - y_bar) squared</td></tr>
+            <tr><td>MSE</td><td>Mean squared error: RSS/n</td></tr>
+          </tbody>
+        </table>
+      </section>
     </details>
   </body>
 </html>
