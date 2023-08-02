@@ -1,0 +1,87 @@
+---
+layout: default
+---
+
+<section id="python">
+  <h2>Python</h2>
+  <section>
+    <h3>Scipy.stat</h3>
+    <section>
+      <table>
+        <thead>
+          <tr><th>methods</th><th>explaination</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>distribution.rvs</td><td>random variate</td></tr>
+          <tr><td>distribution.pdf</td><td>probability density function</td></tr>
+          <tr><td>distribution.ppf(q=[range of quantiles])</td><td>values of covariates that corresponds with the upper and lower bound of quantile</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </section>
+
+  <section>
+    <h3>Scipy.integrate</h3>
+    <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.quad.html#scipy.integrate.quad">Reference</a>
+    <section>
+      <table>
+        <thead>
+          <tr><th>methods</th><th>explaination</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>integrate.quad(func, a, b)</td><td>definite integral of func from a to b</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </section>
+
+  <section>
+    <h3>Numpy</h3>
+    <section>
+      <ul>
+        <li>to generate x for pdf, could use <code>np.linspace(start, end, number of datapoints)</code></li>
+      </ul>
+    </section>
+  </section>
+</section>
+
+<section>
+  <h2>R</h2>
+  <section>
+    <section class="topic" id="subset-selection">
+      <h3>subset selection</h3>
+      <table>
+        <thead>
+          <tr><th>library</th><th>function</th><th>explaination</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>leaps</td><td>regsubsets</td><td>returns separate best models of all sizes up to nvmax, algorithm can be exhaustive, forward or backward</td></tr>
+          <tr><td>glmnet</td><td>cv.glmnet</td><td>cross-validation</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="topic" id="glm">
+      <h3>GLM</h3>
+      <table>
+        <thead>
+          <tr><th>library</th><th>function</th><th>explaination</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>glmnet</td><td>glmnet(alpha = 0)</td><td>Ridge Regression</td></tr>
+          <tr><td>glmnet</td><td>glmnet(alpha = 1)</td><td>Lasso Regression</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="topic" id="dimension-reduction">
+      <h3>Dimension Reduction</h3>
+      <table>
+        <thead>
+          <tr><th>library</th><th>function</th><th>explaination</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>pls</td><td>pcr()</td><td>Principle Component Regression</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </section>
+</section>
